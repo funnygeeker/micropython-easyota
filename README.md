@@ -13,6 +13,7 @@
 - 使用时需要连接网络，在硬件允许的情况下，您可以使用 `micropython-easynetwork` 连接无线网络，也可以用其他的方式完成网络的连接。
 - [https://github.com/funnygeeker/micropython-easynetwork](https://github.com/funnygeeker/micropython-easynetwork)
 - `Github` 仓库在使用时如果经常出现网络问题，必要时请更换为 `Gitee` 仓库进行测试
+- 更新过程中下载的文件会缓存到 `Flash`，更新前请注意开发板的可用存储空间是否足够
 - 更新成功后建议及时重启开发板
 
 ### 参考资料
