@@ -1,3 +1,4 @@
+import machine
 from libs.easyota import EasyOTA
 
 eo = EasyOTA('funnygeeker', 'micropython-easyota', 'main', files=['main.py'], ignore=['libs'],
@@ -30,6 +31,7 @@ if result:
 result = eo.update()  # 更新文件
 if result is True:
     result = '更新成功'
+    machine.reset()  # 重启开发板
 elif result is False:
     result = '无需更新'
 elif result is None:
