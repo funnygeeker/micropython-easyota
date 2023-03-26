@@ -19,7 +19,8 @@ eo.callback = state  # 设置回调函数（非必须）
 
 # 在检查更新之前，请确保您的开发板已经连接网络，否则可能会报错。
 result = eo.fetch()  # 检查更新
-print("""===【检查更新】===
+if result:
+    print("""===【检查更新】===
 更改的文件：{}
 删除的文件：{}
 新增的目录：{}
@@ -33,5 +34,5 @@ elif result is False:
     result = '无需更新'
 elif result is None:
     result = '更新失败'
-
-print("===【更新结果】===\n{}".format(result))
+if result:
+    print("===【更新结果】===\n{}".format(result))
