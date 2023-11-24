@@ -1,4 +1,5 @@
 # micropython-easyota
+！12月前会有一个更新，目前已知一个bug，在修。
 - 适用于 `micropython` 的简易 OTA 更新库，相较于 [Senko](https://github.com/RangerDigital/senko)，增加对 OTA 失败等异常情况的处理机制，
 以及更多更新选项。
 - 比如更新到一半时突然断电，或者文件下载不完整等情况导致的异常都可以很大程度地避免。
