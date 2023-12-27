@@ -1,6 +1,6 @@
 # import machine
-from libs.easyota import EasyOTA
-from libs.easynetwork import Client
+from lib.easyota import EasyOTA
+from lib.easynetwork import Client
 
 # 连接网络
 client = Client()
@@ -23,7 +23,7 @@ def callback(msg, done, total):
 # 初始化实例
 eo = EasyOTA('funnygeeker', 'micropython-easyota', 'main',
              git_raw=EasyOTA.GITHUB_RAW, git_api=EasyOTA.GITHUB_API,
-             ignore=['/libs/easynetwork.py', '/libs/urequests.py', '/libs/easyota.py', '/main.py'],
+             ignore=['/lib/easynetwork.py', '/lib/urequests.py', '/lib/easyota.py', '/main.py'],
              callback=callback)  # 更多使用方法详见注释，您可以用 AI 将注释翻译为您所使用的语言
 
 

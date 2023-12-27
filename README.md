@@ -16,8 +16,8 @@
 ### Usage Example
 ```python
 # import machine
-from libs.easyota import EasyOTA
-from libs.easynetwork import Client
+from lib.easyota import EasyOTA
+from lib.easynetwork import Client
 
 # Connect to the network
 client = Client()
@@ -38,7 +38,7 @@ def callback(msg, done, total):
 # Initialize the instance
 eo = EasyOTA('funnygeeker', 'micropython-easyota', 'main',
              git_raw=EasyOTA.GITHUB_RAW, git_api=EasyOTA.GITHUB_API,
-             ignore=['/libs/easynetwork.py', '/libs/urequests.py', '/libs/easyota.py', '/main.py'],
+             ignore=['/lib/easynetwork.py', '/lib/urequests.py', '/lib/easyota.py', '/main.py'],
              callback=callback)  # More usage details can be found in the comments. You can use AI to translate the comments to your desired language.
 
 # Before checking for updates, make sure your development board is connected to the internet, otherwise it may throw an error.
