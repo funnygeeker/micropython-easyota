@@ -1,3 +1,4 @@
+# import machine
 from lib.easyota import EasyOTA
 from lib.easynetwork import Client
 
@@ -49,3 +50,5 @@ elif result is None:
 if result:
     print("===【更新结果】===\n{}".format(result))
 # 记得在 Thonny IDE 中点击 刷新，以刷新文件列表
+
+# machine.reset()  # 重新启动开发板，以应用更新

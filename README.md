@@ -63,6 +63,8 @@ elif result is None:
 if result:
     print("===【Update Result】===\n{}".format(result))
 # Remember to click "Refresh" in Thonny IDE to update the file list.
+
+# machine.reset()  # Restart the development board to apply the update
 ```
 
 ### Notes

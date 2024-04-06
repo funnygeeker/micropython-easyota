@@ -65,6 +65,8 @@ elif result is None:
 if result:
     print("===【更新结果】===\n{}".format(result))
 # 记得在 Thonny IDE 中点击 刷新，以刷新文件列表
+
+# machine.reset()  # 重新启动开发板，以应用更新
 ```
 ### 注意事项
 - 更新过程中下载的文件会缓存到缓存目录，更新前请注意开发板的可用存储空间是否足够
