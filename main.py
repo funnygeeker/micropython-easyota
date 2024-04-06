@@ -1,4 +1,3 @@
-# import machine
 from lib.easyota import EasyOTA
 from lib.easynetwork import Client
 
